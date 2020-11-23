@@ -27,7 +27,7 @@ allsourceip = data['sourceIP'].tolist()
 alldestinationip=data['destIP'].tolist()
 allclassification=data['classification'].tolist()
 
-# Calculating number of unique source IP addresses
+# Calculating number of unique source IP addresses without using predetermined set function.
 output1 = []
 for x in allsourceip:
     if x not in output1:
@@ -36,7 +36,7 @@ for x in allsourceip:
 num1=len(output1)
 print('Number of unique elements in sourceIP are', num1)
 
-# Calculating number of unique destination IP addresses
+# Calculating number of unique destination IP addresses without using predetermined set function.
 output2 = []
 for x in alldestinationip:
     if x not in output2:
@@ -44,7 +44,7 @@ for x in alldestinationip:
 num2=len(output2)
 print('Number of unique elements in destinationIP are', num2)
 
-# Calculating number of unique classifications
+# Calculating number of unique classifications without using predetermined set function.
 output3 = []
 for x in allclassification:
     if x not in output3:
